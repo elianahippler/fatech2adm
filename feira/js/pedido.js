@@ -1,28 +1,27 @@
-const lanches = [
-    {id: 0, nome: 'Cachorro-quente', img: '../feira/imagens/produtos/01.jpg', preco: 10.00, quantidade: 0},
-    {id: 1, nome: 'Espetinho', img: '../feira/imagens/produtos/02.jpg', preco: 8.50, quantidade: 0},
-    {id: 2, nome: 'Pão-de-Queijo + Café', img: '../feira/imagens/produtos/03.jpg', preco: 3.00, quantidade: 0},
+const agua = [
+    {id: 0, nome: 'Água com gás', img: '../feira/imagens/produtos/0.jpeg', preco: 3.00, quantidade: 0},
+    {id: 1, nome: 'Água sem gás', img: '../feira/imagens/produtos/1.jpeg', preco: 3.00, quantidade: 0},
+    {id: 2, nome: 'Suco 500ml', img: '../feira/imagens/produtos/9.jpg', preco: 10.00, quantidade: 0},
+    {id: 3, nome: 'Suco 330ml', img: '../feira/imagens/produtos/10.jpg', preco: 7.00, quantidade: 0},
 ];
 
-const cookies = [
-    {id: 3, nome: 'Cookie Tradicional', img: '../feira/imagens/produtos/04.jpg', preco: 5.00, quantidade: 0},
-    {id: 4, nome: 'Cookie com Nuttela', img: '../feira/imagens/produtos/05.jpg', preco: 6.00, quantidade: 0},
+const trufas = [
+    {id: 4, nome: 'Trufa de Brigadeiro', img: '../feira/imagens/produtos/2.jpg', preco: 4.00, quantidade: 0},
+    {id: 5, nome: 'Trufa de Paçoca', img: '../feira/imagens/produtos/3.jpg', preco: 4.00, quantidade: 0},
+    {id: 6, nome: 'Trufa de Maracujá', img: '../feira/imagens/produtos/4.jpg', preco: 4.00, quantidade: 0},
 ];
 
-const doces = [
-    {id: 5, nome: 'Pudim', img: '../feira/imagens/produtos/06.jpg', preco: 4.00, quantidade: 0},
-    {id: 6, nome: 'Sonho Doce', img: '../feira/imagens/produtos/07.jpg', preco: 11.00, quantidade: 0},
+const paodemel = [
+    {id: 7, nome: 'Pão de Mel - Brigadeiro', img: '../feira/imagens/produtos/5.jpg', preco: 10.00, quantidade: 0},
+    {id: 8, nome: 'Pão de Mel - Maracujá', img: '../feira/imagens/produtos/6.jpg', preco: 10.00, quantidade: 0},
+    {id: 9, nome: 'Pão de Mel - Doce Leite', img: '../feira/imagens/produtos/7.jpg', preco: 10.00, quantidade: 0},  
 ];
 
-const combos = [
-    {id: 7, nome: 'Combo Família:<h3> 5 Espetinhos</h3>', img: '../feira/imagens/produtos/08.jpg', preco: 40.00, quantidade: 0},
-    {id: 8, nome: 'Espudim:<h3> 2 Espetinhos e 2 Pudins</h3>', img: '../feira/imagens/produtos/09.jpg', preco: 20.00, quantidade: 0},
-    {id: 9, nome: 'Duplo Sabor:<h3> 2 Cachorro-Quente + 2 Cookies c/Brigadeiro</h3>', img: '../feira/imagens/produtos/10.jpg', preco: 40.00, quantidade: 0},
-    {id: 10, nome: 'Explosão de Sabores:<h3> 4 Espetinhos + 2 Cookies c/Nutella</h3>', img: '../feira/imagens/produtos/11.jpg', preco: 42.00, quantidade: 0},
-    {id: 11, nome: 'Combo Quádruplo:<h3> 4 Cachorro-Quente</h3>', img: '../feira/imagens/produtos/12.jpg', preco: 35.00, quantidade: 0},
+const brownie = [
+    {id: 10, nome: 'Brownie', img: '../feira/imagens/produtos/8.jpg', preco: 10.00, quantidade: 0},
 ];
 
-const allItems = lanches.concat(cookies, doces, combos);
+const allItems = agua.concat(trufas, paodemel, brownie);
 
 document.getElementById("cliente").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -173,10 +172,10 @@ visualizarPedidoButton.addEventListener('click', function () {
     localStorage.setItem('nome', nome);
 });
 
-inicializarLoja(lanches, 'produtosLanches');
-inicializarLoja(cookies, 'produtosCookies');
-inicializarLoja(doces, 'produtosDoces');
-inicializarLoja(combos, 'produtosCombos');
+inicializarLoja(agua, 'produtosAgua');
+inicializarLoja(trufas, 'produtosTrufas');
+inicializarLoja(paodemel, 'produtosPao');
+inicializarLoja(brownie, 'produtosBrownie');
 inicializarCarrinhoDoLocalStorage();
 atualizarCarrinho();
 calcularEExibirTotalCarrinho();

@@ -39,23 +39,17 @@ main .montarpedido .mensagem{
     margin: 14px auto;
     font-size: 25px;
     font-size: bolder;
-    padding-bottom: 15px;
-    padding-top: 25px;
+    padding-bottom: 35px;
+    padding-top: 45px;
 }
 
 .vitrine{
-    width: 1450px;
-    height: 520px;
+    width: 1690px;
+    height: 600px;
     margin: auto;
 }
 
-.vitrine2{
-    width: 1450px;
-    height: 880px;
-    margin: auto;
-}
-
-#produtosLanches h2, #produtosCookies h2, #produtosDoces h2{
+#produtosAgua h2, #produtosTrufas h2, #produtosPao h2, #produtosBrownie h2{
     background-color: transparent;
     border: 2px solid orange;
     color: orange;
@@ -69,44 +63,11 @@ main .montarpedido .mensagem{
     text-transform: uppercase;
 }
 
-#produtosCombos h2{
-    background-color: transparent;
-    border: 2px solid orange;
-    color: orange;
-    text-shadow: 2px 2px 8px #00000088;
-    box-shadow: 2px 2px 8px #0000004f;
-    width: 100%;
-    border-radius: 18px;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-#produtosLanches, #produtosCookies, #produtosDoces{
-    width: 450px;
+#produtosAgua, #produtosTrufas, #produtosPao, #produtosBrownie{
+    width: 380px;
     margin-left: 2%;
     display: grid;
     float: left;
-}
-
-#produtosCombos{
-    width: 1400px;
-    margin-left: 2%;
-    display: grid;  
-}
-
-#produtosCombos .produto-single{
-    font-family: 'Manrope', sans-serif;
-    display: inline;
-    background-color: #ffffff0c;
-    color: white;
-    box-shadow: 2px 2px 8px #0000004f;
-    border-radius: 18px;
-    height: 150px;
-    width: 100%;
-    border: 3px solid #36006813;
-    margin-bottom: 10px;
 }
 
 .produto-single{
@@ -122,14 +83,6 @@ main .montarpedido .mensagem{
     margin-bottom: 10px;
 }
 
-#produtosCombos .produto-single img{
-    width: 130px;
-    height: 130px;
-    float: left;
-    border-radius: 18px;
-    margin: 10px;
-    display: block;
-}
 .produto-single img{
     width: 100px;
     height: 100px;
@@ -223,11 +176,12 @@ main .montarpedido .mensagem{
     height: 90px;
     padding-top: 15px;
     padding-bottom: 30px;
-    width: 1450px;
+    width: 1690px;
     margin: auto;
 }
 
 .nome{
+    background-color: transparent;
     border: 2px solid orange;
     color: orange;
     text-shadow: 2px 2px 8px #00000088;
@@ -235,7 +189,7 @@ main .montarpedido .mensagem{
     float: left;
     margin-left: 2%;
     font-size: 1.2em;
-    width: 670px;
+    width: 800px;
     height: 57px;
     border-radius: 18px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.123);
@@ -244,7 +198,7 @@ main .montarpedido .mensagem{
 .nomecompleto{
     padding: 10px 10px;
     margin-left: 10px;
-    width: 180px;
+    width: 380px;
     text-align: left;
     display: block;
     float: left;
@@ -285,7 +239,7 @@ main .montarpedido .mensagem{
 }
 
 .limparcarrinhobtn{
-    margin-left: 300px;
+    margin-left: 310px;
     background-color: transparent;
     border: 2px solid grey;
     color: grey;
@@ -321,9 +275,9 @@ main .montarpedido .mensagem{
     color: #000000c5;
     box-shadow: 2px 2px 8px #0000002c;
     float: right;
-    margin-right: 1%;
+    margin-right: 2.3%;
     display: block;
-    width: 320px;
+    width: 380px;
     height: 57px;
     border-radius: 18px;
     font-size: 18px;

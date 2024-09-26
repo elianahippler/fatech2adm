@@ -88,8 +88,7 @@ body{
     font-size: 1.4em;
     font-weight: 500;
     text-align: left;
-    width: 35%;
-    height: 30px;
+    width: 60%;
     display: inline-block;
 }
 
@@ -100,7 +99,7 @@ body{
     width: 40%; 
     font-size: 1.2em;
     font-family: sans-serif;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .btnrmv{
@@ -109,7 +108,7 @@ body{
     color: grey;
     width: 30px;
     height: 30px;
-    display: grid;
+    display: block;
     float: right;
     font-size: 1.5em;
     border-radius: 50%;
@@ -334,7 +333,7 @@ body{
         width: 25px;
         height: 25px;
     }
-    
+
     .bomapetite{
         width: 400px;
         height: 80px;

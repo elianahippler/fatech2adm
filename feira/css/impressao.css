@@ -24,13 +24,6 @@
         font-size: 14px;
     }
 
-    h3{
-        display: inline-block;
-        float: bottom;
-        font-weight: lighter;
-        font-size: 14px;
-    }
-
     #totalPedidoCupom{
         margin-top: 10px;
         font-weight: bolder;
